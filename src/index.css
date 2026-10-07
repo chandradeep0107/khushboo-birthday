@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    background-color: #08020b;
+    color: #fdf2f4;
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, .font-serif-luxury {
+    font-family: 'Playfair Display', Cormorant Garamond, Georgia, serif;
+  }
+}
+
+/* Glassmorphism effects */
+.glass-panel {
+  background: rgba(26, 12, 34, 0.55);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(244, 217, 220, 0.12);
+}
+
+.glass-panel-hover {
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.glass-panel-hover:hover {
+  background: rgba(44, 18, 59, 0.65);
+  border-color: rgba(244, 217, 220, 0.3);
+  transform: translateY(-4px);
+  box-shadow: 0 15px 35px -5px rgba(200, 100, 117, 0.25);
+}
+
+/* Shimmering gradient text */
+.text-gold-gradient {
+  background: linear-gradient(135deg, #fdf4db 0%, #f4cb80 40%, #eeb053 70%, #fff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-rose-gradient {
+  background: linear-gradient(135deg, #fff 0%, #f4d9dc 30%, #ebb9c0 60%, #dc8d99 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Glowing text */
+.glow-text-rose {
+  text-shadow: 0 0 25px rgba(220, 141, 153, 0.6), 0 0 50px rgba(200, 100, 117, 0.3);
+}
+
+.glow-text-gold {
+  text-shadow: 0 0 25px rgba(244, 203, 128, 0.6), 0 0 50px rgba(238, 176, 83, 0.3);
+}
+
+/* Custom smooth scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0d0413;
+}
+::-webkit-scrollbar-thumb {
+  background: #421a57;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #c86475;
+}
+
+/* Hide scrollbar utility */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
