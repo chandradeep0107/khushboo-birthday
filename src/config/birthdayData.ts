@@ -4,7 +4,7 @@ export const initialBirthdayConfig: BirthdayConfig = {
   recipientName: "Khusboo",
   recipientFullName: "Khusboo Singh",
   senderName: "Mandeep",
-  birthdayDate: "October 14",
+  birthdayDate: "October 8",
   tagline: "A celebration of grace, laughter, and an extraordinary soul",
   
   // Page 1: The Arrow of the Heart
